@@ -1,0 +1,85 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.rowcontol {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.oJeWuf {
+    top: 18px;
+}
+
+.horizontalLine {
+    background-color: rgba(0,0,0,.12);
+    height: 1px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.spacebetweenrow {
+    margin-bottom: 10px;
+}
+
+
+/*
+    textarea non resizable
+*/
+.tanre {
+    resize: none;
+    overflow: hidden;
+    background-color: transparent;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: visible;
+    display: block;
+    font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    min-height: 24px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+/*
+    textarea resizable
+*/
+.tares {
+    resize: none;
+    overflow: hidden;
+    background-color: transparent;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    display: block;
+    font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    min-height: 24px;
+    line-height: 24px;
+    width: 100%;
+    max-width: 1080px;
+}
+
+.tL9Q4c {
+    font-size: 14px;
+}

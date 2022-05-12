@@ -1,0 +1,58 @@
+﻿@model AutomaticEmailNotifier.Models.EmailModel
+@{
+    ViewData["Title"] = "Compose automatic email notifier";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                    <!-- @Html.Partial("Alert") -->
+                    <h3 class="Title">@ViewBag.Title</h3>
+                    <hr />
+                    <div class="row">
+                        <div class="col-12">
+                            <br />
+                            <p>Separate each email address with a semicolon</p>
+                            <br />
+
+                            <form id="gmailForm" class="form-horizontal" method="POST"
+                                asp-controller="Email" asp-action="Index" enctype="multipart/form-data">
+
+                                <div class="rowcontol">
+                                    <div class="RpC4Ne oJeWuf col-sm-10">
+                                        <input class="form-control tanre" id="To" name="To" placeholder="Recipients" tabindex="1" rows="1" value="" multiple />
+                                        <div class="text-danger" id="ToAlertMessage"></div>
+                                        <div class="spacebetweenrow"></div>
+                                    </div>
+                                </div>
+                                <div class="rowcontol">
+                                    <div class="RpC4Ne oJeWuf col-sm-10">
+                                        <input class="form-control tanre" id="Subject" name="Subject" placeholder="Subject" tabindex="2" rows="1" value=""/>
+                                        <div class="spacebetweenrow"></div>
+                                    </div>
+                                </div>
+                                <div class="rowcontol">
+                                    <div class="RpC4Ne oJeWuf col-sm-10">
+                                        <textarea class="form-control tares" id="Body" name="Message" placeholder="Message" tabindex="3" rows="25" value=""/></textarea>
+                                        <div class="spacebetweenrow"></div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-sm-10">
+                                        <div class="text-center d-flex align-items-end justify-content-end">
+                                            <button class="btn btn-primary" type="submit" id="BtnSubmit" tabindex="4"><span class="glyphicon glyphicon-save"></span>Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
